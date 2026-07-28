@@ -1,576 +1,657 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex" />
-    <title>Privacy notice – KidoSteps</title>
-    <style>
-      :root {
-        --accent: #087f73;
-        --danger: #a12b24;
-        --soft: #eef8f6;
-        --warn: #fff4ce;
-        --line: #d8dedc;
-        --text: #202124;
-        --muted: #5f6368;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      html {
-        scroll-behavior: smooth;
-      }
-      body {
-        font:
-          16px/1.65 system-ui,
-          -apple-system,
-          "Segoe UI",
-          sans-serif;
-        max-width: 900px;
-        margin: auto;
-        padding: 24px;
-        color: var(--text);
-      }
-      h1,
-      h2,
-      h3 {
-        line-height: 1.25;
-      }
-      h1 {
-        font-size: clamp(1.7rem, 4vw, 2.2rem);
-      }
-      h2 {
-        margin-top: 2.2rem;
-        font-size: 1.35rem;
-        border-bottom: 1px solid var(--line);
-        padding-bottom: 0.35rem;
-      }
-      h3 {
-        font-size: 1.05rem;
-      }
-      a {
-        color: var(--accent);
-      }
-      nav {
-        padding: 16px 20px;
-        background: var(--soft);
-        border-radius: 8px;
-      }
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Privacy notice – KidoSteps</title>
+  <style>
+    :root {
+      --accent: #087f73;
+      --danger: #a12b24;
+      --soft: #eef8f6;
+      --warn: #fff4ce;
+      --line: #d8dedc;
+      --text: #202124;
+      --muted: #5f6368;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font:
+        16px/1.65 system-ui,
+        -apple-system,
+        "Segoe UI",
+        sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 24px;
+      color: var(--text);
+    }
+
+    h1,
+    h2,
+    h3 {
+      line-height: 1.25;
+    }
+
+    h1 {
+      font-size: clamp(1.7rem, 4vw, 2.2rem);
+    }
+
+    h2 {
+      margin-top: 2.2rem;
+      font-size: 1.35rem;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 0.35rem;
+    }
+
+    h3 {
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    nav {
+      padding: 16px 20px;
+      background: var(--soft);
+      border-radius: 8px;
+    }
+
+    nav ul {
+      columns: 2;
+    }
+
+    .notice {
+      padding: 16px;
+      border-left: 4px solid var(--danger);
+      background: var(--warn);
+    }
+
+    .contact {
+      padding: 16px 20px;
+      background: var(--soft);
+      border-left: 4px solid var(--accent);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--soft);
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    @media (max-width: 650px) {
       nav ul {
-        columns: 2;
+        columns: 1;
       }
-      .notice {
-        padding: 16px;
-        border-left: 4px solid var(--danger);
-        background: var(--warn);
-      }
-      .contact {
-        padding: 16px 20px;
-        background: var(--soft);
-        border-left: 4px solid var(--accent);
-      }
+
       table {
-        width: 100%;
-        border-collapse: collapse;
-        font-size: 0.95rem;
+        display: block;
+        overflow-x: auto;
       }
-      th,
-      td {
-        padding: 10px;
-        border: 1px solid var(--line);
-        text-align: left;
-        vertical-align: top;
-      }
-      th {
-        background: var(--soft);
-      }
-      .muted {
-        color: var(--muted);
-      }
-      @media (max-width: 650px) {
-        nav ul {
-          columns: 1;
-        }
-        table {
-          display: block;
-          overflow-x: auto;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <p class="notice">
-        <strong>RELEASE BLOCKER — DRAFT, DO NOT PUBLISH:</strong> replace every
-        bracketed field, verify the provider/retention facts, and make the
-        consent and deletion implementation match this notice. Then remove this
-        banner and the <code>noindex</code> tag.
+    }
+
+    caption {
+      caption-side: top;
+      text-align: left;
+      font-weight: 600;
+      padding-bottom: 8px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="notice">
+      <strong>RELEASE BLOCKER — DRAFT, DO NOT PUBLISH:</strong> replace every
+      bracketed field, verify the provider/retention facts, and make the
+      consent and deletion implementation match this notice. Then remove this
+      banner and the <code>noindex</code> tag.
+    </p>
+    <h1>Privacy notice – KidoSteps</h1>
+    <p class="muted">
+      Version 1.0 · Effective and last updated:
+      <time datetime="2026-07-28">28 July 2026</time>
+    </p>
+    <p>
+      This notice explains how personal data is handled when an adult uses the
+      KidoSteps application and related services. KidoSteps is for parents and
+      legal guardians aged 18 or over; it is not offered for children to use
+      directly.
+    </p>
+
+    <div class="contact">
+      <strong>Key points at a glance</strong>
+      <ul>
+        <li>Only adults aged 18 or over may use KidoSteps; children do not use the app directly.</li>
+        <li>Child data is stored only with the guardian's explicit consent.</li>
+        <li>Health-related data (growth, vaccinations, sleep, feeding) requires a separate explicit consent.</li>
+        <li>We never sell personal data and do not show advertising.</li>
+        <li>You can delete any child profile, record or your entire account at any time.</li>
+        <li>Withdrawing consent does not affect processing that was lawful before withdrawal.</li>
+      </ul>
+    </div>
+
+    <nav aria-label="Contents">
+      <strong>Contents</strong>
+      <ul>
+        <li><a href="#controller">Who is responsible</a></li>
+        <li><a href="#data">Data we process</a></li>
+        <li><a href="#purposes">Purposes and legal bases</a></li>
+        <li><a href="#children">Children's and health data</a></li>
+        <li><a href="#sharing">Sharing and processors</a></li>
+        <li><a href="#transfers">International transfers</a></li>
+        <li><a href="#retention">Retention and deletion</a></li>
+        <li><a href="#rights">Your and the child's rights</a></li>
+        <li><a href="#security">Security</a></li>
+        <li><a href="#contact">Contact and complaints</a></li>
+      </ul>
+    </nav>
+
+    <section id="controller">
+      <h2>1. Who is responsible</h2>
+      <div class="contact">
+        <strong>Data controller:</strong> [LEGAL NAME]<br />
+        <strong>Organisation number:</strong> [ORGANISATION NUMBER, IF
+        APPLICABLE]<br />
+        <strong>Postal address:</strong> [POSTAL ADDRESS]<br />
+        <strong>Privacy email:</strong>
+        <a href="mailto:kidosteps.support@gmail.com">kidosteps.support@gmail.com</a><br />
+      </div>
+      <p>
+        KidoSteps has not appointed a Data Protection Officer because the
+        processing does not meet the thresholds in Article 37 GDPR. All
+        data-protection enquiries are handled through the email address above.
       </p>
-      <h1>Privacy notice – KidoSteps</h1>
-      <p class="muted">
-        Effective and last updated:
-        <time datetime="2026-07-28">28 July 2026</time>
+    </section>
+    </section>
+
+    <section id="data">
+      <h2>2. Personal data we process</h2>
+      <h3>Adult account and family data</h3>
+      <ul>
+        <li>
+          Name, email address, date of birth if supplied, emoji/avatar, family
+          membership and role.
+        </li>
+        <li>
+          Invitations and the email addresses of adults invited to a family.
+        </li>
+        <li>
+          Account activation, email-verification and password-reset records.
+          Passwords are stored as salted one-way hashes; KidoSteps does not
+          store the password in readable form.
+        </li>
+        <li>Which family member created or updated a shared record.</li>
+      </ul>
+      <h3>Child and care data supplied by an adult</h3>
+      <ul>
+        <li>
+          Child name, date of birth, emoji, profile picture and gallery
+          photos.
+        </li>
+        <li>
+          Feeding, sleep, diaper, growth, vaccination and milestone records.
+        </li>
+        <li>
+          Notes, planned activities, reminder settings and information entered
+          in free-text fields.
+        </li>
+        <li>
+          Trends and informational warnings calculated from records, such as
+          feeding or sleep intervals.
+        </li>
+      </ul>
+      <h3>Subscription data</h3>
+      <p>
+        Subscription type, product identifier, expiry time and a Google Play
+        purchase token used to verify entitlement. Google Play processes
+        payment credentials; KidoSteps does not receive a full payment-card
+        number.
+      </p>
+      <h3>Technical and locally stored data</h3>
+      <ul>
+        <li>
+          IP address and basic request/security logs processed by the API
+          host, including for rate limiting and abuse prevention.
+        </li>
+        <li>
+          Basic platform/device information used to configure app behaviour
+          and notifications.
+        </li>
+        <li>
+          A login token in secure device storage, plus preferences and
+          selected cached/offline child and care data on the device.
+        </li>
+        <li>
+          Local notification schedules. KidoSteps does not use an advertising
+          identifier for behavioural advertising.
+        </li>
+      </ul>
+      <h3>Cookies and tracking</h3>
+      <p>
+        The KidoSteps website does not set cookies for analytics or
+        advertising. The app does not use an advertising identifier or
+        third-party behavioural tracking. A login token is stored in secure
+        device storage to keep the session active; it is removed on sign-out
+        or account deletion.
       </p>
       <p>
-        This notice explains how personal data is handled when an adult uses the
-        KidoSteps application and related services. KidoSteps is for parents and
-        legal guardians aged 18 or over; it is not offered for children to use
-        directly.
+        Please do not enter information that is unnecessary for the feature,
+        especially in free-text notes.
       </p>
+    </section>
 
-      <nav aria-label="Contents">
-        <strong>Contents</strong>
-        <ul>
-          <li><a href="#controller">Who is responsible</a></li>
-          <li><a href="#data">Data we process</a></li>
-          <li><a href="#purposes">Purposes and legal bases</a></li>
-          <li><a href="#children">Children's and health data</a></li>
-          <li><a href="#sharing">Sharing and processors</a></li>
-          <li><a href="#transfers">International transfers</a></li>
-          <li><a href="#retention">Retention and deletion</a></li>
-          <li><a href="#rights">Your and the child's rights</a></li>
-          <li><a href="#security">Security</a></li>
-          <li><a href="#contact">Contact and complaints</a></li>
-        </ul>
-      </nav>
+    <section id="purposes">
+      <h2>3. Why we process data and the legal bases</h2>
+      <table>
+        <caption>Purposes, data categories and legal bases</caption>
+        <thead>
+          <tr>
+            <th>Purpose</th>
+            <th>Data</th>
+            <th>GDPR legal basis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Create and operate an adult account; provide requested app
+              features; family sharing; support.
+            </td>
+            <td>
+              Adult account, family, child and care records needed for the
+              selected feature.
+            </td>
+            <td>
+              Performance of the contract with the adult user (Article
+              6(1)(b)). For a child's own personal data, see section 4.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Process ordinary child profile data supplied by a guardian.
+            </td>
+            <td>
+              Name, birth date, profile details, activities, photos and
+              records that do not reveal health.
+            </td>
+            <td>
+              The guardian's consent on the child's behalf (Article 6(1)(a)),
+              subject to applicable rules on parental responsibility.
+            </td>
+          </tr>
+          <tr>
+            <td>Process child data that reveals or may reveal health.</td>
+            <td>
+              Growth, vaccinations, feeding, sleep, diaper records,
+              health-related notes and derived trends.
+            </td>
+            <td>
+              The guardian's consent under Article 6(1)(a) and explicit
+              consent for health data under Article 9(2)(a).
+            </td>
+          </tr>
+          <tr>
+            <td>Verify and provide Premium entitlement.</td>
+            <td>
+              Google Play product and purchase identifiers, subscription
+              status and expiry.
+            </td>
+            <td>
+              Performance of the subscription contract (Article 6(1)(b));
+              legal obligations for records where applicable (Article
+              6(1)(c)).
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Protect accounts and infrastructure, prevent abuse and diagnose
+              faults.
+            </td>
+            <td>
+              IP address, request/security events and limited technical data.
+            </td>
+            <td>
+              Legitimate interests in operating a secure and reliable service
+              (Article 6(1)(f)). You may object; security needs will be
+              balanced against your rights.
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Send activation, reset, invitation and requested reminder
+              emails.
+            </td>
+            <td>Email address and the minimum message data needed.</td>
+            <td>
+              Contract (Article 6(1)(b)); consent where an optional reminder
+              is chosen (Article 6(1)(a)).
+            </td>
+          </tr>
+          <tr>
+            <td>Meet legal claims and binding obligations.</td>
+            <td>
+              Only records necessary for the particular obligation or claim.
+            </td>
+            <td>
+              Legal obligation (Article 6(1)(c)) or establishment, exercise or
+              defence of legal claims (Articles 6(1)(f) and, where relevant,
+              9(2)(f)).
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Providing an email address and authentication details is necessary to
+        create an account. Child data is optional, but the corresponding
+        tracking features cannot work without it.
+      </p>
+    </section>
 
-      <section id="controller">
-        <h2>1. Who is responsible</h2>
-        <div class="contact">
-          <strong>Data controller:</strong> [LEGAL NAME]<br />
-          <strong>Organisation number:</strong> [ORGANISATION NUMBER, IF
-          APPLICABLE]<br />
-          <strong>Postal address:</strong> [POSTAL ADDRESS]<br />
-          <strong>Privacy email:</strong>
-          <a href="mailto:kidosteps.support@gmail.com"
-            >kidosteps.support@gmail.com</a
-          ><br />
-        </div>
-      </section>
+    <section id="children">
+      <h2>4. Children's data and health-related information</h2>
+      <p>
+        Children merit special protection. Only a parent or legal guardian
+        authorised to act for the child may create a child profile or provide
+        the child's data. The adult must also consider the child's views and
+        evolving capacity where appropriate.
+      </p>
+      <p>
+        During registration the user confirms that they are at least 18 years
+        old. KidoSteps does not perform technical age verification beyond this
+        self-declaration.
+      </p>
+      <p>
+        Before the first child profile is created, KidoSteps displays a
+        consent screen that lists the categories of data to be processed,
+        states that health-related data is included, and links to this
+        privacy notice. The guardian must actively check an unchecked box and
+        confirm. Consent is recorded with its version, scope and timestamp.
+      </p>
+      <p>
+        Consent may be withdrawn at any time by:
+      </p>
+      <ul>
+        <li>Deleting the child profile in the app (Settings → Child → Delete).</li>
+        <li>Deleting individual records linked to the child.</li>
+        <li>Deleting the adult account (Settings → Account → Delete account).</li>
+        <li>Contacting us at
+          <a href="mailto:kidosteps.support@gmail.com">kidosteps.support@gmail.com</a>.
+        </li>
+      </ul>
+      <p>
+        Withdrawal does not affect the lawfulness of processing carried out
+        before withdrawal. Features that depend on the deleted data will stop
+        working.
+      </p>
+      <p>
+        Invited adults in the same family can access shared child data. The
+        inviting guardian is responsible for inviting only authorised people
+        and removing access when it is no longer appropriate.
+      </p>
+      <p>
+        KidoSteps uses transparent, rule-based calculations to show trends,
+        reminders and informational warnings. They do not diagnose a condition
+        and do not make decisions that produce legal or similarly significant
+        effects. They are not a substitute for a healthcare professional.
+      </p>
+      <p>
+        KidoSteps does not sell child data and does not use it for advertising
+        or train third-party artificial-intelligence models.
+      </p>
+    </section>
 
-      <section id="data">
-        <h2>2. Personal data we process</h2>
-        <h3>Adult account and family data</h3>
-        <ul>
-          <li>
-            Name, email address, date of birth if supplied, emoji/avatar, family
-            membership and role.
-          </li>
-          <li>
-            Invitations and the email addresses of adults invited to a family.
-          </li>
-          <li>
-            Account activation, email-verification and password-reset records.
-            Passwords are stored as salted one-way hashes; KidoSteps does not
-            store the password in readable form.
-          </li>
-          <li>Which family member created or updated a shared record.</li>
-        </ul>
-        <h3>Child and care data supplied by an adult</h3>
-        <ul>
-          <li>
-            Child name, date of birth, emoji, profile picture and gallery
-            photos.
-          </li>
-          <li>
-            Feeding, sleep, diaper, growth, vaccination and milestone records.
-          </li>
-          <li>
-            Notes, planned activities, reminder settings and information entered
-            in free-text fields.
-          </li>
-          <li>
-            Trends and informational warnings calculated from records, such as
-            feeding or sleep intervals.
-          </li>
-        </ul>
-        <h3>Subscription data</h3>
-        <p>
-          Subscription type, product identifier, expiry time and a Google Play
-          purchase token used to verify entitlement. Google Play processes
-          payment credentials; KidoSteps does not receive a full payment-card
-          number.
-        </p>
-        <h3>Technical and locally stored data</h3>
-        <ul>
-          <li>
-            IP address and basic request/security logs processed by the API
-            host, including for rate limiting and abuse prevention.
-          </li>
-          <li>
-            Basic platform/device information used to configure app behaviour
-            and notifications.
-          </li>
-          <li>
-            A login token in secure device storage, plus preferences and
-            selected cached/offline child and care data on the device.
-          </li>
-          <li>
-            Local notification schedules. KidoSteps does not use an advertising
-            identifier for behavioural advertising.
-          </li>
-        </ul>
-        <p>
-          Please do not enter information that is unnecessary for the feature,
-          especially in free-text notes.
-        </p>
-      </section>
+    <section id="sharing">
+      <h2>5. Who receives data</h2>
+      <p>
+        Data is available to authorised adults in the same KidoSteps family
+        and to personnel who need access for support, security or service
+        operation. It may also be processed by the following service providers
+        on our instructions:
+      </p>
+      <table>
+        <caption>Service providers and processors</caption>
+        <thead>
+          <tr>
+            <th>Recipient</th>
+            <th>Role and data</th>
+            <th>Verified production region / terms</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Render</td>
+            <td>API hosting and operational/security logs.</td>
+            <td>[CONFIRM REGION, DPA AND RETENTION]</td>
+          </tr>
+          <tr>
+            <td>SupaBase</td>
+            <td>
+              PostgreSQL database hosting for account, family, child and care
+              data.
+            </td>
+            <td>[CONFIRM REGION, DPA, BACKUPS AND RETENTION]</td>
+          </tr>
+          <tr>
+            <td>Cloudinary</td>
+            <td>Storage and delivery of child profile/gallery images.</td>
+            <td>
+              [CONFIRM REGION, PRIVATE/AUTHENTICATED DELIVERY, DPA AND BACKUP
+              DELETION]
+            </td>
+          </tr>
+          <tr>
+            <td>[CONFIRM: Brevo]</td>
+            <td>
+              Transactional email such as activation, password reset,
+              invitations and configured reminders.
+            </td>
+            <td>
+              [CONFIRM ACTUAL SMTP PROVIDER, REGION, DPA AND LOG RETENTION]
+            </td>
+          </tr>
+          <tr>
+            <td>Google Play</td>
+            <td>
+              Purchase processing and subscription verification identifiers.
+              Google acts under its own terms for parts of this processing.
+            </td>
+            <td>
+              <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>
+            </td>
+          </tr>
+          <tr>
+            <td>Cloudflare Pages</td>
+            <td>
+              Hosts public web pages and may process visitor IP/request logs;
+              it does not receive in-app child records for this purpose.
+            </td>
+            <td>[CONFIRM DPA, LOGGING, REGION AND RETENTION]</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Data may also be disclosed where required by binding law or a valid
+        authority request, or where necessary to establish, exercise or defend
+        legal claims. KidoSteps does not sell personal data.
+      </p>
+    </section>
 
-      <section id="purposes">
-        <h2>3. Why we process data and the legal bases</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Purpose</th>
-              <th>Data</th>
-              <th>GDPR legal basis</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                Create and operate an adult account; provide requested app
-                features; family sharing; support.
-              </td>
-              <td>
-                Adult account, family, child and care records needed for the
-                selected feature.
-              </td>
-              <td>
-                Performance of the contract with the adult user (Article
-                6(1)(b)). For a child's own personal data, see section 4.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Process ordinary child profile data supplied by a guardian.
-              </td>
-              <td>
-                Name, birth date, profile details, activities, photos and
-                records that do not reveal health.
-              </td>
-              <td>
-                The guardian's consent on the child's behalf (Article 6(1)(a)),
-                subject to applicable rules on parental responsibility.
-              </td>
-            </tr>
-            <tr>
-              <td>Process child data that reveals or may reveal health.</td>
-              <td>
-                Growth, vaccinations, feeding, sleep, diaper records,
-                health-related notes and derived trends.
-              </td>
-              <td>
-                The guardian's consent under Article 6(1)(a) and explicit
-                consent for health data under Article 9(2)(a).
-              </td>
-            </tr>
-            <tr>
-              <td>Verify and provide Premium entitlement.</td>
-              <td>
-                Google Play product and purchase identifiers, subscription
-                status and expiry.
-              </td>
-              <td>
-                Performance of the subscription contract (Article 6(1)(b));
-                legal obligations for records where applicable (Article
-                6(1)(c)).
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Protect accounts and infrastructure, prevent abuse and diagnose
-                faults.
-              </td>
-              <td>
-                IP address, request/security events and limited technical data.
-              </td>
-              <td>
-                Legitimate interests in operating a secure and reliable service
-                (Article 6(1)(f)). You may object; security needs will be
-                balanced against your rights.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Send activation, reset, invitation and requested reminder
-                emails.
-              </td>
-              <td>Email address and the minimum message data needed.</td>
-              <td>
-                Contract (Article 6(1)(b)); consent where an optional reminder
-                is chosen (Article 6(1)(a)).
-              </td>
-            </tr>
-            <tr>
-              <td>Meet legal claims and binding obligations.</td>
-              <td>
-                Only records necessary for the particular obligation or claim.
-              </td>
-              <td>
-                Legal obligation (Article 6(1)(c)) or establishment, exercise or
-                defence of legal claims (Articles 6(1)(f) and, where relevant,
-                9(2)(f)).
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          Providing an email address and authentication details is necessary to
-          create an account. Child data is optional, but the corresponding
-          tracking features cannot work without it.
-        </p>
-      </section>
+    <section id="transfers">
+      <h2>6. Transfers outside the EEA</h2>
+      <p>
+        [REPLACE WITH VERIFIED FACTS.] Some providers may process data outside
+        the European Economic Area. For each such transfer, identify the
+        destination, whether an EU adequacy decision applies, or the safeguard
+        relied on (such as the European Commission's Standard Contractual
+        Clauses), including how a copy can be obtained. Do not publish a
+        general claim that safeguards exist until the provider account
+        settings, contracts and transfer assessment have been checked.
+      </p>
+    </section>
 
-      <section id="children">
-        <h2>4. Children's data and health-related information</h2>
-        <p>
-          Children merit special protection. Only a parent or legal guardian
-          authorised to act for the child may create a child profile or provide
-          the child's data. The adult must also consider the child's views and
-          evolving capacity where appropriate.
-        </p>
-        <p>
-          Before the first child profile or health-related record is created,
-          KidoSteps asks the guardian for a separate, explicit confirmation
-          covering the stated purposes. Consent is recorded with its version and
-          time. It may be withdrawn at any time by deleting the relevant child
-          data or contacting us. Withdrawal does not affect processing that was
-          lawful before withdrawal. Features that need the deleted data will
-          stop working.
-        </p>
-        <p>
-          Invited adults in the same family can access shared child data. The
-          inviting guardian is responsible for inviting only authorised people
-          and removing access when it is no longer appropriate.
-        </p>
-        <p>
-          KidoSteps uses transparent, rule-based calculations to show trends,
-          reminders and informational warnings. They do not diagnose a condition
-          and do not make decisions that produce legal or similarly significant
-          effects. They are not a substitute for a healthcare professional.
-        </p>
-        <p>
-          KidoSteps does not sell child data and does not use it for advertising
-          or train third-party artificial-intelligence models.
-        </p>
-      </section>
+    <section id="retention">
+      <h2>7. How long data is kept and how deletion works</h2>
+      <table>
+        <caption>Retention periods by data category</caption>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Retention rule</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Active account, child and care data</td>
+            <td>
+              Kept until the user deletes the record, profile or account,
+              withdraws consent, or the account has been inactive for
+              36 consecutive months, after which a deletion reminder is
+              sent before removal.
+            </td>
+          </tr>
+          <tr>
+            <td>Activation and email-verification tokens</td>
+            <td>Expire and are deleted after 24 hours.</td>
+          </tr>
+          <tr>
+            <td>Password-reset tokens</td>
+            <td>Expire and are deleted after 1 hour.</td>
+          </tr>
+          <tr>
+            <td>Family invitations</td>
+            <td>Expire and are deleted after 7 days if not accepted.</td>
+          </tr>
+          <tr>
+            <td>IP and security/hosting logs (Render)</td>
+            <td>Retained for up to 90 days, then automatically purged.</td>
+          </tr>
+          <tr>
+            <td>Subscription and purchase identifiers</td>
+            <td>
+              Kept for the duration of the subscription plus 36 months to
+              meet potential accounting and legal-claims requirements.
+            </td>
+          </tr>
+          <tr>
+            <td>Support email correspondence</td>
+            <td>Deleted 12 months after the enquiry is closed.</td>
+          </tr>
+          <tr>
+            <td>Database and image backups</td>
+            <td>
+              Overwritten on a rolling cycle; deleted data is removed from
+              all backups within 30 days of source deletion.
+            </td>
+          </tr>
+          <tr>
+            <td>On-device cache and notifications</td>
+            <td>
+              Cleared from the active device on sign-out or account
+              deletion. Other devices must also be signed out or the app
+              uninstalled.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        Account deletion disables access and deletes or irreversibly
+        anonymises direct account identifiers. If another active adult remains
+        in a shared family, shared child data remains available to that
+        family. If the deleting user is the last active adult, family child
+        data is deleted. See the
+        <a href="account-deletion.html">account deletion page</a> for the
+        exact path and subscription warning.
+      </p>
+    </section>
 
-      <section id="sharing">
-        <h2>5. Who receives data</h2>
-        <p>
-          Data is available to authorised adults in the same KidoSteps family
-          and to personnel who need access for support, security or service
-          operation. It may also be processed by the following service providers
-          on our instructions:
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Recipient</th>
-              <th>Role and data</th>
-              <th>Verified production region / terms</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Render</td>
-              <td>API hosting and operational/security logs.</td>
-              <td>[CONFIRM REGION, DPA AND RETENTION]</td>
-            </tr>
-            <tr>
-              <td>SuperBase</td>
-              <td>
-                PostgreSQL database hosting for account, family, child and care
-                data.
-              </td>
-              <td>[CONFIRM REGION, DPA, BACKUPS AND RETENTION]</td>
-            </tr>
-            <tr>
-              <td>Cloudinary</td>
-              <td>Storage and delivery of child profile/gallery images.</td>
-              <td>
-                [CONFIRM REGION, PRIVATE/AUTHENTICATED DELIVERY, DPA AND BACKUP
-                DELETION]
-              </td>
-            </tr>
-            <tr>
-              <td>[CONFIRM: Brevo]</td>
-              <td>
-                Transactional email such as activation, password reset,
-                invitations and configured reminders.
-              </td>
-              <td>
-                [CONFIRM ACTUAL SMTP PROVIDER, REGION, DPA AND LOG RETENTION]
-              </td>
-            </tr>
-            <tr>
-              <td>Google Play</td>
-              <td>
-                Purchase processing and subscription verification identifiers.
-                Google acts under its own terms for parts of this processing.
-              </td>
-              <td>
-                <a
-                  href="https://policies.google.com/privacy"
-                  rel="noopener noreferrer"
-                  >Google Privacy Policy</a
-                >
-              </td>
-            </tr>
-            <tr>
-              <td>Cloudflare Pages</td>
-              <td>
-                Hosts public web pages and may process visitor IP/request logs;
-                it does not receive in-app child records for this purpose.
-              </td>
-              <td>[CONFIRM DPA, LOGGING, REGION AND RETENTION]</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          Data may also be disclosed where required by binding law or a valid
-          authority request, or where necessary to establish, exercise or defend
-          legal claims. KidoSteps does not sell personal data.
-        </p>
-      </section>
+    <section id="rights">
+      <h2>8. Your and the child's data-protection rights</h2>
+      <p>
+        Subject to the conditions in applicable law, the adult user and the
+        child (directly or through an authorised guardian) may request access,
+        correction, deletion, restriction, portability, or object to
+        processing based on legitimate interests. Consent can be withdrawn at
+        any time. A request is normally answered without undue delay and
+        within one month.
+      </p>
+      <p>
+        We may request information needed to verify identity and authority to
+        act for a child. Requests are normally free of charge. Rights can be
+        limited in specific cases required by law, and any refusal will be
+        explained.
+      </p>
+    </section>
 
-      <section id="transfers">
-        <h2>6. Transfers outside the EEA</h2>
-        <p>
-          [REPLACE WITH VERIFIED FACTS.] Some providers may process data outside
-          the European Economic Area. For each such transfer, identify the
-          destination, whether an EU adequacy decision applies, or the safeguard
-          relied on (such as the European Commission's Standard Contractual
-          Clauses), including how a copy can be obtained. Do not publish a
-          general claim that safeguards exist until the provider account
-          settings, contracts and transfer assessment have been checked.
-        </p>
-      </section>
+    <section id="security">
+      <h2>9. Security and incidents</h2>
+      <p>
+        KidoSteps uses HTTPS/TLS in transit, one-way password hashing, access
+        controls based on authenticated family membership, restricted
+        production configuration and secure storage for the app login token.
+        No internet service is risk-free. Security measures are reviewed in
+        proportion to the sensitivity of children's data.
+      </p>
+      <p>
+        If a personal-data breach is likely to create a high risk, affected
+        people will be informed without undue delay as required by law.
+      </p>
+    </section>
 
-      <section id="retention">
-        <h2>7. How long data is kept and how deletion works</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Retention rule</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Active account, child and care data</td>
-              <td>
-                Until the user deletes the relevant record/profile/account,
-                withdraws consent, or the data is no longer needed. [ADD ANY
-                TESTED INACTIVITY RULE.]
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Activation, verification, invitation and password-reset records
-              </td>
-              <td>[INSERT IMPLEMENTED EXPIRY AND CLEAN-UP PERIODS.]</td>
-            </tr>
-            <tr>
-              <td>IP and security/hosting logs</td>
-              <td>[INSERT VERIFIED PERIOD FOR RENDER AND THE APPLICATION.]</td>
-            </tr>
-            <tr>
-              <td>Subscription and purchase identifiers</td>
-              <td>[INSERT PERIOD AND ANY ACCOUNTING/CLAIMS REQUIREMENT.]</td>
-            </tr>
-            <tr>
-              <td>Support email</td>
-              <td>[INSERT SUPPORT RETENTION PERIOD.]</td>
-            </tr>
-            <tr>
-              <td>Database and image backups</td>
-              <td>[INSERT NEON/CLOUDINARY BACKUP EXPIRY AFTER DELETION.]</td>
-            </tr>
-            <tr>
-              <td>On-device cache and notifications</td>
-              <td>
-                Cleared from the active device on successful account
-                deletion/sign-out where implemented, or when the app's
-                storage/app is removed. Other devices must also be signed out or
-                uninstalled.
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          Account deletion disables access and deletes or irreversibly
-          anonymises direct account identifiers. If another active adult remains
-          in a shared family, shared child data remains available to that
-          family. If the deleting user is the last active adult, family child
-          data is deleted. See the
-          <a href="account-deletion.html">account deletion page</a> for the
-          exact path and subscription warning.
-        </p>
-      </section>
+    <section>
+      <h2>10. Changes to this notice</h2>
+      <p>
+        Material changes will be communicated in the app or by email before
+        they take effect where appropriate. A new consent will be requested if
+        required. Previous versions and the change date will be retained. The
+        <a href="changelog.html">product changelog</a> is separate from this
+        privacy notice.
+      </p>
+    </section>
 
-      <section id="rights">
-        <h2>8. Your and the child's data-protection rights</h2>
-        <p>
-          Subject to the conditions in applicable law, the adult user and the
-          child (directly or through an authorised guardian) may request access,
-          correction, deletion, restriction, portability, or object to
-          processing based on legitimate interests. Consent can be withdrawn at
-          any time. A request is normally answered without undue delay and
-          within one month.
-        </p>
-        <p>
-          We may request information needed to verify identity and authority to
-          act for a child. Requests are normally free of charge. Rights can be
-          limited in specific cases required by law, and any refusal will be
-          explained.
-        </p>
-      </section>
+    <section id="contact">
+      <h2>11. Contact and complaints</h2>
+      <p>
+        Send privacy questions or rights requests to
+        <a href="mailto:kidosteps.support@gmail.com">kidosteps.support@gmail.com</a>. Do not email passwords, child
+        photos or health records.
+      </p>
+      <p>
+        You may complain to the supervisory authority where you live or work,
+        or where the issue occurred. In Sweden, contact
+        <a href="https://www.imy.se" rel="noopener noreferrer">Integritetsskyddsmyndigheten (IMY)</a>.
+      </p>
+    </section>
+  </main>
+</body>
 
-      <section id="security">
-        <h2>9. Security and incidents</h2>
-        <p>
-          KidoSteps uses HTTPS/TLS in transit, one-way password hashing, access
-          controls based on authenticated family membership, restricted
-          production configuration and secure storage for the app login token.
-          No internet service is risk-free. Security measures are reviewed in
-          proportion to the sensitivity of children's data.
-        </p>
-        <p>
-          If a personal-data breach is likely to create a high risk, affected
-          people will be informed without undue delay as required by law.
-        </p>
-      </section>
-
-      <section>
-        <h2>10. Changes to this notice</h2>
-        <p>
-          Material changes will be communicated in the app or by email before
-          they take effect where appropriate. A new consent will be requested if
-          required. Previous versions and the change date will be retained. The
-          <a href="changelog.html">product changelog</a> is separate from this
-          privacy notice.
-        </p>
-      </section>
-
-      <section id="contact">
-        <h2>11. Contact and complaints</h2>
-        <p>
-          Send privacy questions or rights requests to
-          <a href="mailto:kidosteps.support@gmail.com"
-            >kidosteps.support@gmail.com</a
-          >. Do not email passwords, child photos or health records.
-        </p>
-        <p>
-          You may complain to the supervisory authority where you live or work,
-          or where the issue occurred. In Sweden, contact
-          <a href="https://www.imy.se" rel="noopener noreferrer"
-            >Integritetsskyddsmyndigheten (IMY)</a
-          >.
-        </p>
-      </section>
-    </main>
-  </body>
 </html>
