@@ -461,12 +461,19 @@
             </td>
           </tr>
           <tr>
-            <td>SupaBase</td>
+            <td>Supabase</td>
             <td>
               PostgreSQL database hosting for account, family, child and care
               data.
             </td>
-            <td>[CONFIRM REGION, DPA, BACKUPS AND RETENTION]</td>
+            <td>
+              London, United Kingdom (AWS eu-west-2). The UK benefits from
+              an EU adequacy decision. A signed Data Processing Addendum
+              is in place, incorporating EU Standard Contractual Clauses
+              and UK Addendum for any onward transfers. Daily automated
+              backups encrypted at rest (AES-256). See
+              <a href="https://supabase.com/legal/dpa" rel="noopener noreferrer">Supabase DPA</a>.
+            </td>
           </tr>
           <tr>
             <td>Cloudinary</td>
@@ -547,13 +554,28 @@
           </tr>
           <tr>
             <td>Supabase</td>
-            <td>[CONFIRM YOUR PROJECT REGION]</td>
-            <td>[CONFIRM — check Supabase DPA]</td>
+            <td>London, United Kingdom (AWS eu-west-2)</td>
+            <td>
+              EU adequacy decision for the UK (28 June 2021). Signed DPA
+              incorporating EU SCCs and UK Addendum covers any onward
+              transfers.
+            </td>
           </tr>
           <tr>
-            <td>Cloudinary</td>
-            <td>[CONFIRM REGION]</td>
-            <td>[CONFIRM — check Cloudinary DPA]</td>
+            <td>Cloudflare R2</td>
+            <td>
+              Private object storage for child profile and gallery images.
+            </td>
+            <td>
+              European Union (EU location hint). Images stored in private
+              buckets accessible only via time-limited signed URLs.
+              Cloudflare's Data Processing Addendum applies automatically
+              and includes EU Standard Contractual Clauses. Cloudflare is
+              certified under the EU-US Data Privacy Framework, ISO 27001
+              and SOC 2 Type II. No egress fees. See
+              <a href="https://www.cloudflare.com/cloudflare-customer-dpa/" rel="noopener noreferrer">Cloudflare
+                DPA</a>.
+            </td>
           </tr>
           <tr>
             <td>Brevo</td>
@@ -571,8 +593,17 @@
           </tr>
           <tr>
             <td>Cloudflare Pages</td>
-            <td>[CONFIRM REGION]</td>
-            <td>[CONFIRM — check Cloudflare DPA]</td>
+            <td>
+              Hosts public web pages; does not receive in-app child
+              records.
+            </td>
+            <td>
+              Cloudflare's Data Processing Addendum applies automatically
+              and includes EU Standard Contractual Clauses. Only visitor
+              IP and request logs are processed; no child data. See
+              <a href="https://www.cloudflare.com/cloudflare-customer-dpa/" rel="noopener noreferrer">Cloudflare
+                DPA</a>.
+            </td>
           </tr>
         </tbody>
       </table>
