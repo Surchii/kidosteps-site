@@ -4,7 +4,6 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex" />
   <title>Privacy notice – KidoSteps</title>
   <style>
     :root {
@@ -130,12 +129,6 @@
 
 <body>
   <main>
-    <p class="notice">
-      <strong>RELEASE BLOCKER — DRAFT, DO NOT PUBLISH:</strong> replace every
-      bracketed field, verify the provider/retention facts, and make the
-      consent and deletion implementation match this notice. Then remove this
-      banner and the <code>noindex</code> tag.
-    </p>
     <h1>Privacy notice – KidoSteps</h1>
     <p class="muted">
       Version 1.0 · Effective and last updated:
@@ -152,8 +145,8 @@
       <strong>Key points at a glance</strong>
       <ul>
         <li>Only adults aged 18 or over may use KidoSteps; children do not use the app directly.</li>
-        <li>Child data is stored only with the guardian's explicit consent.</li>
-        <li>Health-related data (growth, vaccinations, sleep, feeding) requires a separate explicit consent.</li>
+        <li>Child data, including health-related information (growth, vaccinations, sleep and feeding), is entered and
+          managed by the guardian and processed based on the guardian's consent.</li>
         <li>We never sell personal data and do not show advertising.</li>
         <li>You can delete any child profile, record or your entire account at any time.</li>
         <li>Withdrawing consent does not affect processing that was lawful before withdrawal.</li>
@@ -179,10 +172,8 @@
     <section id="controller">
       <h2>1. Who is responsible</h2>
       <div class="contact">
-        <strong>Data controller:</strong> [LEGAL NAME]<br />
-        <strong>Organisation number:</strong> [ORGANISATION NUMBER, IF
-        APPLICABLE]<br />
-        <strong>Postal address:</strong> [POSTAL ADDRESS]<br />
+        <strong>Data controller:</strong> Shlk Surchi<br />
+        <strong>Postal address:</strong> Stallgatan 26, 164 32 Stockholm<br />
         <strong>Privacy email:</strong>
         <a href="mailto:kidosteps.support@gmail.com">kidosteps.support@gmail.com</a><br />
       </div>
@@ -191,7 +182,6 @@
         processing does not meet the thresholds in Article 37 GDPR. All
         data-protection enquiries are handled through the email address above.
       </p>
-    </section>
     </section>
 
     <section id="data">
@@ -386,16 +376,19 @@
         evolving capacity where appropriate.
       </p>
       <p>
-        During registration the user confirms that they are at least 18 years
-        old. KidoSteps does not perform technical age verification beyond this
-        self-declaration.
+        KidoSteps is intended for adults aged 18 or over and is not designed
+        for direct use by children.
       </p>
       <p>
-        Before the first child profile is created, KidoSteps displays a
-        consent screen that lists the categories of data to be processed,
-        states that health-related data is included, and links to this
-        privacy notice. The guardian must actively check an unchecked box and
-        confirm. Consent is recorded with its version, scope and timestamp.
+        KidoSteps relies on the guardian's consent when creating and managing
+        child profiles and entering child-related data. The guardian is
+        responsible for ensuring that they are authorised to provide the
+        child's data.
+      </p>
+
+      <p>
+        The adult user is responsible for ensuring that the data entered
+        is appropriate, necessary, and lawful.
       </p>
       <p>
         Consent may be withdrawn at any time by:
@@ -476,21 +469,29 @@
             </td>
           </tr>
           <tr>
-            <td>Cloudinary</td>
-            <td>Storage and delivery of child profile/gallery images.</td>
+            <td>Cloudflare R2</td>
             <td>
-              [CONFIRM REGION, PRIVATE/AUTHENTICATED DELIVERY, DPA AND BACKUP
-              DELETION]
+              Private object storage for child profile and gallery images.
+            </td>
+            <td>
+              European Union (EU location). Images are stored in private
+              buckets and are only accessible via time-limited signed URLs.
+              Cloudflare's Data Processing Addendum applies automatically
+              and includes EU Standard Contractual Clauses. Cloudflare is
+              certified under the EU-US Data Privacy Framework, ISO 27001
+              and SOC 2 Type II. See
+              <a href="https://www.cloudflare.com/cloudflare-customer-dpa/" rel="noopener noreferrer">Cloudflare
+                DPA</a>.
             </td>
           </tr>
           <tr>
-            <td>[CONFIRM: Brevo]</td>
+            <td>Brevo</td>
+            <td>European Union (France)</td>
             <td>
-              Transactional email such as activation, password reset,
-              invitations and configured reminders.
-            </td>
-            <td>
-              [CONFIRM ACTUAL SMTP PROVIDER, REGION, DPA AND LOG RETENTION]
+              Brevo acts as a processor under its Data Processing Agreement
+              and incorporates EU Standard Contractual Clauses for any
+              transfers outside the EEA. See
+              <a href="https://www.brevo.com/legal/privacypolicy/" rel="noopener noreferrer">Brevo Privacy Policy</a>.
             </td>
           </tr>
           <tr>
@@ -509,7 +510,10 @@
               Hosts public web pages and may process visitor IP/request logs;
               it does not receive in-app child records for this purpose.
             </td>
-            <td>[CONFIRM DPA, LOGGING, REGION AND RETENTION]</td>
+            <td>Cloudflare's Data Processing Addendum applies automatically.
+              Only visitor IP and request logs are processed; no child data.
+              See <a href="https://www.cloudflare.com/cloudflare-customer-dpa/" rel="noopener noreferrer">Cloudflare
+                DPA</a></td>
           </tr>
         </tbody>
       </table>
@@ -525,7 +529,7 @@
       <p>
         KidoSteps aims to keep personal data within the European Economic
         Area. The API is hosted in Frankfurt, Germany (Render) and the
-        database in [YOUR SUPABASE REGION].
+        database in London, United Kingdom (AWS eu-west-2).
       </p>
       <p>
         Some processors are operated by companies based in the United
@@ -579,8 +583,13 @@
           </tr>
           <tr>
             <td>Brevo</td>
-            <td>[CONFIRM REGION]</td>
-            <td>[CONFIRM — check Brevo DPA]</td>
+            <td>European Union (France)</td>
+            <td>
+              Brevo acts as a processor under its Data Processing Agreement
+              and incorporates EU Standard Contractual Clauses for any
+              transfers outside the EEA. See
+              <a href="https://www.brevo.com/legal/privacypolicy/" rel="noopener noreferrer">Brevo Privacy Policy</a>.
+            </td>
           </tr>
           <tr>
             <td>Google Play</td>
@@ -628,10 +637,7 @@
           <tr>
             <td>Active account, child and care data</td>
             <td>
-              Kept until the user deletes the record, profile or account,
-              withdraws consent, or the account has been inactive for
-              36 consecutive months, after which a deletion reminder is
-              sent before removal.
+              Kept until the user deletes the record, profile or account, or withdraws consent.
             </td>
           </tr>
           <tr>
@@ -640,11 +646,11 @@
           </tr>
           <tr>
             <td>Password-reset tokens</td>
-            <td>Expire and are deleted after 1 hour.</td>
+            <td>Expire after 30 minutes.</td>
           </tr>
           <tr>
             <td>Family invitations</td>
-            <td>Expire and are deleted after 7 days if not accepted.</td>
+            <td>Expire after 24 hours.</td>
           </tr>
           <tr>
             <td>IP and security/hosting logs (Render)</td>
@@ -668,8 +674,8 @@
           <tr>
             <td>Database and image backups</td>
             <td>
-              Overwritten on a rolling cycle; deleted data is removed from
-              all backups within 30 days of source deletion.
+              Backups are retained according to the provider's standard retention
+              policies and are overwritten on a rolling basis.
             </td>
           </tr>
           <tr>
@@ -683,13 +689,12 @@
         </tbody>
       </table>
       <p>
-        Account deletion disables access and deletes or irreversibly
-        anonymises direct account identifiers. If another active adult remains
-        in a shared family, shared child data remains available to that
-        family. If the deleting user is the last active adult, family child
-        data is deleted. See the
-        <a href="account-deletion.html">account deletion page</a> for the
-        exact path and subscription warning.
+        Account deletion permanently removes the account and all associated
+        personal data. If another active adult remains in a shared family,
+        shared child data remains available to that family. If the deleting
+        user is the last active adult, all family data is permanently deleted.
+        See the <a href="/account-deletion/">account deletion page</a> for the
+        exact steps.
       </p>
     </section>
 
@@ -732,7 +737,7 @@
         Material changes will be communicated in the app or by email before
         they take effect where appropriate. A new consent will be requested if
         required. Previous versions and the change date will be retained. The
-        <a href="changelog.html">product changelog</a> is separate from this
+        <a href="/changelog/">product changelog</a> is separate from this
         privacy notice.
       </p>
     </section>
